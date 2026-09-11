@@ -1,11 +1,11 @@
 {
-  "name": "resume-hosting",
+  "name": "latex-resume",
   "version": "1.0.0",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "build": "apt-get update && apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra && pdflatex resume.tex",
+    "start": "npx servor . index.html --port $PORT"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "servor": "^4.0.0"
   }
 }

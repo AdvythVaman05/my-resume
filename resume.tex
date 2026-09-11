@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in Latex
+% Based off of Jake Gutierrez Resume Template
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable / ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Advyth Vaman Akalankam} \\ \vspace{1pt}
+    CSE Student @ Amrita Vishwa Vidyapeetham, Amritapuri \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ +91 9391185905 ~
+    \href{mailto:advythvaman06@gmail.com}
+    {\raisebox{-0.2\height}\faEnvelope\ advythvaman06@gmail.com} ~
+    \href{https://linkedin.com/in/advyth-vaman-akalankam}
+    {\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/advyth-vaman-akalankam} ~
+    \href{https://github.com/AdvythVaman05}
+    {\raisebox{-0.2\height}\faGithub\ github.com/AdvythVaman05}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------PROFILE-----------
+\section{Profile}
+\small{
+Computer Science student focused on software engineering, data science, and applied AI. Experienced in building machine learning models, statistical data pipelines, and full-stack analytical applications using Python and modern ML frameworks.
+}
+\vspace{-5pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Amrita Vishwa Vidyapeetham}{Aug. 2023 -- Present}
+      {B.Tech in Computer Science and Engineering \textnormal{-- CGPA: 8.8}}{Amritapuri, Kerala}
+
+    \resumeSubheading
+      {FIITJEE Junior College}{Jun. 2021 -- May 2023}
+      {Class 12 \textnormal{-- 97.2\%}}{Hyderabad, Telangana}
+
+    \resumeSubheading
+      {Dr KKR's Gowtham Concept School}{Jun. 2020 -- May 2021}
+      {Class 10 \textnormal{-- CGPA: 10.0}}{Hyderabad, Telangana}
+
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C++} \\
+     \textbf{Machine Learning \& AI}{: Machine Learning, Deep Learning, Scikit-learn, HuggingFace, PyTorch, OpenCV, MediaPipe} \\
+     \textbf{Data Science}{: Pandas, NumPy, SciPy, Data Processing, Statistical Analysis, Data Visualization} \\
+     \textbf{Frameworks \& APIs}{: Django, Flask, FastAPI, REST APIs, Streamlit, Plotly} \\
+     \textbf{Databases \& Tools}{: PostgreSQL, MySQL, MongoDB, SQLite, Git, Linux, Vercel, Render}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ACM Student Chapter, Amritapuri}{Sep. 2023 -- Present}
+      {SIG AI Lead \& Member}{Amritapuri, Kerala}
+      \resumeItemListStart
+        \resumeItem{Led and organized 6+ AI/ML workshops for 150+ students, increasing learning output by 40\%.}
+        \resumeItem{Designed structured AI learning paths and mentored juniors, resulting in 10+ completed individual projects.}
+        \resumeItem{Orchestrated AI induction for 200+ students, inspiring interest and boosting AI awareness in the incoming batch by nearly 60\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{\href{https://dynamic-riskm0dels.streamlit.app/}{Dynamic Risk Models (Portfolio Optimization)}} $|$ \emph{Python, NumPy, SciPy, Streamlit}}
+          {}
+          \resumeItemListStart
+            \resumeItem{Built a quantitative portfolio optimization dashboard implementing Markowitz, CVaR, and Black-Litterman models with out-of-sample backtesting.}
+            \resumeItem{Applied hierarchical clustering to identify correlation structures and evaluate diversification and tail-risk behavior.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{\href{https://marketpulse-ns3.streamlit.app/}{MarketPulse (Financial Analytics Dashboard)}} $|$ \emph{Python, FastAPI, Pandas, Plotly, Streamlit}}
+          {}
+          \resumeItemListStart
+            \resumeItem{Developed a financial analytics platform processing data from 2,300+ NSE-listed securities using automated data pipelines.}
+            \resumeItem{Built a modular FastAPI backend and interactive Plotly dashboards for market analysis, price trends, trading volume, RSI, and MACD.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{\href{https://smart-expense-analyzer-pro.vercel.app}{Smart Expense Analyzer}} $|$ \emph{Flask, React, SQLite, Pandas, Scikit-learn}}
+          {}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack expense analytics platform with REST APIs, JWT authentication, and interactive dashboards for transaction analysis.}
+            \resumeItem{Built Pandas-based preprocessing pipelines and implemented Isolation Forest for machine learning anomaly detection on transaction data.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%-----------COMMUNITY OUTREACH-----------
+\section{Community Outreach}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Student Social Responsibility}{}{}{}
+      \resumeItemListStart
+        \resumeItem{Participated in a Student Social Responsibility initiative focused on guiding students in exploring diverse career opportunities and making informed choices.}
+        \resumeItem{Conducted awareness sessions on the ethical use of AI, promoting responsible and thoughtful technology usage.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%-----------PRIZES & PUBLICATIONS-----------
+\section{Prizes \& Publications}
+  \resumeItemListStart
+    \resumeItem{Publication -- \textit{Intelligent Accident Rate \& Fatality Analysis using OpenStreetMaps}, GRENZE Journal (2024).}
+    \resumeItem{2nd Place, InnovateK12 Hackathon (2024) -- Developed an AI-based predictive analytics solution within 24 hours.}
+  \resumeItemListEnd
+
+\end{document}
